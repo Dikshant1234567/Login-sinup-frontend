@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,400;1,200;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.headLogin,
+.sinuphead {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+.sinup,
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: beige;
+}
+.sinup_container,
+.login_container {
+  position: relative;
+  box-shadow: 5px 5px 14px gray;
+  width: 60%;
+  background-color: white;
+  border: 1px solid black;
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 3%;
+}
+.sinupInp,
+.loginInp {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  margin: 1rem 0;
+}
+.sinupbtn,
+.loginbtn {
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-left: 40%;
+  cursor: pointer;
+}
+label {
+  font-size: 20px;
+}
+/* MODAL */
+.modal {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: #000000e6;
+  position: absolute;
+  z-index: 111;
+  /* top: -100vh; */
+}
+
+.modal-container {
+  border: solid 1px black;
+  width: 20vw;
+  padding: 2rem;
+  padding-top: 3rem;
+  position: relative;
+  background-color: white;
+}
+
+.cross {
+  position: absolute;
+  width: 25px;
+  top: 0.7rem;
+  right: 0.7rem;
+  cursor: pointer;
+}
+.cross:hover {
+  color: red;
+}
+.forgetPassword {
+  font-size: 10px;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+.forgetPassword:hover {
+  color: red;
+}
+.loginpage,
+.sinuppage {
+  margin-left: 40%;
+}
+
+@media (max-width:500px) {
+  .sinup_container, .login_container {
+    width: 100%;
+    border: 0;
+    display: block;
+    padding: 8%;
+}
+.headLogin, .sinuphead {
+  top: 3rem;
+  right: 2rem;
+}
+.loginpage, .sinuppage {
+  margin-left: 0%;
+  margin-bottom: 2rem;
+}
+.sinupInp, .loginInp {
+  margin: 2rem 0;
+}
+}
+
+@media (max-width:1000px) {
+  .modal-container {
+    width: 80vw;
+}
+}
